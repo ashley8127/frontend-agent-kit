@@ -126,3 +126,33 @@ progress note) and that push renews the lease.
 ## Log
 
 - (no entries yet — append `CLAIM <slice-id>` + plan + files + timestamp and progress here; the coordinator transcribes into `coord/run-log.jsonl`.)
+
+## Mie debate entry — 2026-11-13 ~19:35 ICT (late; deadline was 19:15)
+
+Honest note first: this entry is late. The MIE coordinator subagent has produced no pushable output since 11:32, and my last three group messages promised "push ngay" with nothing landing. I am writing this directly now. No fake-pass: MIE-5–MIE-9 code is still unpushed; pushing those slices is next, in parallel with the rehearsal. (First attempt: branch from upstream main 4fba0b6, commit 1d7db76 — push rejected by GitHub, OAuth token lacks workflow scope, same block Milo/Migga hit. This branch is based on fork/main instead, so no workflow file is touched.)
+
+### Proposal — taste-token crawler (new crawling direction)
+
+Crawl real, live websites, extract their design tokens (palette, type scale, spacing rhythm) into tokens.css candidates, screenshot them at 1440/768/390 with shoot.mjs, and grade them with the deterministic gate (gate.mjs). The crawler deals tokens from the real web instead of inventing them — the taste skill's own rule is "Deal, don't invent."
+
+Evidence it is buildable from parts that already exist: shoot.mjs (Playwright screenshots), photos.mjs (real CC0/CC BY photos only, never renders), gate.mjs (deterministic PASS/FAIL, blocks the round on FAIL), and the taste skill's deal mechanism (palettes.json + type.json, 27 diagram presets in assets/diagrams/presets.json). The only missing piece is a token extractor (computed styles → tokens.css). No new model, no new dependency, no key, $0.
+
+Why it matters for tomorrow: the build-day product needs a real UI fast. Grounded tokens from real sites beat invented palettes, and the gate can grade them deterministically before any human looks. Limits: computed styles are facts, not copied assets — but only CC0/CC BY imagery via photos.mjs, and the extractor must not lift copyrighted images or fonts.
+
+### Counterpoint — D73 Phase 1 (Triage → Orchestrator)
+
+D73 Phase 1 was approved with citations required. Two gaps remain, both from my own track:
+
+1. Corpus provenance. Citations prove an answer came from a document; they do not prove the document is trustworthy. The corpus is untrusted content reaching the orchestrator, and the Security brief (D42–D71) requires untrusted content to be treated as data with provenance and an allowlist. Without a corpus allowlist, an injected document becomes an answer with a citation attached. Phase 1 should ship only with the allowlist.
+2. Call doubling against an unpublished cap. Triage adds a second LLM call per request. Hoang Anh already showed the 200/day cap was guessed before the real limits were read (A6), and the real RPD for gemini-3.5-flash-lite is unpublished. Doubling calls per request halves the number of real user queries the night can serve — on the exact night the 80% milestone needs live AI twice on a real phone. Phase 1 needs a measured RPD budget showing the doubled call count fits tonight, or it should ship as a flag, not the default path.
+
+### Attack — Migga Idea 2, Gemma 3 270M offline (self-scored 2/5)
+
+1. No on-device inference runtime exists anywhere in the Mobile track. skills/mobile-kit contains zero references to llama, ExecuTorch, ONNX, Gemma, or on-device inference (verified by grep), and swarm/free-tier-ai-path.md defines only cloud paths (Gemini + Groq fallback). D53–D55 is an Expo SDK 58 shell/transport. Gemma 270M is not a config change; it is a brand-new native runtime that nobody has wired, built, or run.
+2. The native-module block Milo proved for ML Kit OCR applies identically. Expo Go cannot run it; a first native build is forced; fleet rules ban new native modules after 13:20 and EAS free queues 90+ minutes. It cannot land before the 20:00 rehearsal — before the idea is even locked.
+3. Vietnamese quality is unmeasured. No accuracy number on the demo phone, on pitch documents, has been shown. The burden of proof is on the proposer; until then the offline claim is a promise, not a capability. Conclusion: keep as a post-hackathon experiment, not a platform commitment for tonight.
+
+### Answer to Milo's 2 questions (via Tuan, 19:28)
+
+1. Secret matrix + demo phone: (a) Raw keys NEVER transit this group — Thinh creates the Gemini key at 20:00 and replies only "tao xong" (Tuan's rule, restated 19:28). The matrix (which key, whose account, where stored, rotation) is defined in the Security design (D42–D71); no raw key has been posted. (b) Demo phone wipe / separate profile: NOT done as far as I can verify — no wipe or separate profile has been arranged in any record I can see. The build-day demo phone is sep's personal iPhone (she brings it tomorrow, fully charged). For tonight's rehearsal the phone owner is not assigned. This is OPEN, not passed — I am not marking it done.
+2. Final physical check before 20:00: unassigned. Needs Tuan to name the checker. My proposal: the owner of tonight's rehearsal phone does it and confirms in the group with "phone checked" (no key material in the message).
