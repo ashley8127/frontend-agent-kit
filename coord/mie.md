@@ -126,3 +126,16 @@ progress note) and that push renews the lease.
 ## Log
 
 - (no entries yet — append `CLAIM <slice-id>` + plan + files + timestamp and progress here; the coordinator transcribes into `coord/run-log.jsonl`.)
+
+### MIE-1 probe — STOPPED at Step 4 (2026-11-13 02:44Z)
+
+- **Branch:** `mie/mie-1-macbook` (own clone; fork remote `ashley8127/frontend-agent-kit`). **No PR opened.** No changes to PR #5, `coord/BOARD.md`, `coord/run-log.jsonl`.
+- **Note:** the brief's heading `## Mie handoff — ongoing development (from 2026-11-12)` does not exist in this branch's `coord/mie.md`; entry appended under `## Log` instead.
+- **Clone SHA:** `907aeaa3a2ccb4833115773ad2f2650be8f445e8` (clean, `main...origin/main`). **PR #5:** OPEN, not merged, head `a1b3c90`; CI re-verified green independently (ubuntu-24.04, macos-15, macos-26; run 43346544057).
+- **Result:** pre-flight OK, clone exit 0, dry-run exit 0, **install.sh exit 1, verify.sh --strict exit 1, NO `RESULT:` line. Brief-1 loop NOT started** (STOP conditions 3 + 5).
+- **Machine is NOT stock:** sha256sum + timeout present (non-stock); node via nvm + /usr/local pkg; brew; codex/opencode/copilot present. D21 Defects 1+3 cannot fail here; sha256sum-absence half UNPROVEN. GAP-15 cannot trigger here.
+- **Predicted npm `-g` EACCES did NOT occur:** `npm install -g @playwright/cli@0.1.24` OK via user-owned nvm prefix. Engine warm OK (0.1.21 lockstep, hash-verified). Skills written to all host dirs; backup `/Users/mac/.local/share/frontend-agent-kit/backups/20261113T023644Z-6765`.
+- **Failures:** (1) gate fixture FAILs — gitleaks 8.30.1 installed to `~/.local/bin` but not on PATH, gate 1.1 fails closed; (2) judge-artifact (D15) 19 FAILs — BSD sed errors break fixture judge-report fill-in; (3) fatal `./verify.sh: line 2959: grader_args[@]: unbound variable` — bash-3.2 death, no RESULT line (reproduced twice); (4) `install.sh` claims `claude` host with no binary (`~/.claude` exists, binary ABSENT).
+- **Proposed GAP candidates (GAP-16+):** GAP-16 grader_args unbound variable (verify.log:279); GAP-17 BSD sed breaks judge-artifact fixture (verify.log:222-275); GAP-18 gitleaks not on PATH (install.log:134-135); GAP-19 phantom claude host (dryrun.log:2); GAP-20 SSH PATH hides healthy Node.
+- **Evidence pack:** `probe/mie-1/REPORT.md` + `clone/dryrun/install/verify.log` + `env.json` + `.exit`/`.pid` files (SHA-256 in REPORT.md). MacBook scratch root `~/mie-1-probe-20261113/` retained, not cleaned up.
+- **Needs coordinator:** (a) approve re-running verify with `~/.local/bin` on PATH? (b) award GAP-16..20? (c) loop stays blocked until verify prints `RESULT: OK`.

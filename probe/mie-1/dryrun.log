@@ -1,0 +1,106 @@
+NODE: v24.22.1 NPM: 11.19.1
+Hosts: claude codex opencode copilot
+Backup dir: /Users/mac/.local/share/frontend-agent-kit/backups/20261113T023617Z-6655
+DRY RUN — nothing will be written.
+would generate Impeccable host variants (agents/claude-code/opencode/gemini) from vendor/impeccable/skill/
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-design -> /Users/mac/.claude/skills/frontend-design
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-judge -> /Users/mac/.claude/skills/frontend-judge
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-kit -> /Users/mac/.claude/skills/frontend-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/mobile-kit -> /Users/mac/.claude/skills/mobile-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/taste-reference -> /Users/mac/.claude/skills/taste-reference
+would install /Users/mac/mie-1-probe-20261113/repo/skills/threeui -> /Users/mac/.claude/skills/threeui
+would install /Users/mac/mie-1-probe-20261113/repo/skills/ui-ux-pro-max-reference -> /Users/mac/.claude/skills/ui-ux-pro-max-reference
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-core -> /Users/mac/.claude/skills/gsap-core
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-frameworks -> /Users/mac/.claude/skills/gsap-frameworks
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-performance -> /Users/mac/.claude/skills/gsap-performance
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-plugins -> /Users/mac/.claude/skills/gsap-plugins
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-react -> /Users/mac/.claude/skills/gsap-react
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-scrolltrigger -> /Users/mac/.claude/skills/gsap-scrolltrigger
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-timeline -> /Users/mac/.claude/skills/gsap-timeline
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-utils -> /Users/mac/.claude/skills/gsap-utils
+would install <generated-variants>/claude-code/impeccable -> /Users/mac/.claude/skills/impeccable
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-design -> /Users/mac/.agents/skills/frontend-design
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-judge -> /Users/mac/.agents/skills/frontend-judge
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-kit -> /Users/mac/.agents/skills/frontend-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/mobile-kit -> /Users/mac/.agents/skills/mobile-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/taste-reference -> /Users/mac/.agents/skills/taste-reference
+would install /Users/mac/mie-1-probe-20261113/repo/skills/threeui -> /Users/mac/.agents/skills/threeui
+would install /Users/mac/mie-1-probe-20261113/repo/skills/ui-ux-pro-max-reference -> /Users/mac/.agents/skills/ui-ux-pro-max-reference
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-core -> /Users/mac/.agents/skills/gsap-core
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-frameworks -> /Users/mac/.agents/skills/gsap-frameworks
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-performance -> /Users/mac/.agents/skills/gsap-performance
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-plugins -> /Users/mac/.agents/skills/gsap-plugins
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-react -> /Users/mac/.agents/skills/gsap-react
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-scrolltrigger -> /Users/mac/.agents/skills/gsap-scrolltrigger
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-timeline -> /Users/mac/.agents/skills/gsap-timeline
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-utils -> /Users/mac/.agents/skills/gsap-utils
+would install <generated-variants>/agents/impeccable -> /Users/mac/.agents/skills/impeccable
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-design -> /Users/mac/.codex/skills/frontend-design
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-judge -> /Users/mac/.codex/skills/frontend-judge
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-kit -> /Users/mac/.codex/skills/frontend-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/mobile-kit -> /Users/mac/.codex/skills/mobile-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/taste-reference -> /Users/mac/.codex/skills/taste-reference
+would install /Users/mac/mie-1-probe-20261113/repo/skills/threeui -> /Users/mac/.codex/skills/threeui
+would install /Users/mac/mie-1-probe-20261113/repo/skills/ui-ux-pro-max-reference -> /Users/mac/.codex/skills/ui-ux-pro-max-reference
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-core -> /Users/mac/.codex/skills/gsap-core
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-frameworks -> /Users/mac/.codex/skills/gsap-frameworks
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-performance -> /Users/mac/.codex/skills/gsap-performance
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-plugins -> /Users/mac/.codex/skills/gsap-plugins
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-react -> /Users/mac/.codex/skills/gsap-react
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-scrolltrigger -> /Users/mac/.codex/skills/gsap-scrolltrigger
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-timeline -> /Users/mac/.codex/skills/gsap-timeline
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-utils -> /Users/mac/.codex/skills/gsap-utils
+would install <generated-variants>/agents/impeccable -> /Users/mac/.codex/skills/impeccable
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-design -> /Users/mac/.config/opencode/skills/frontend-design
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-judge -> /Users/mac/.config/opencode/skills/frontend-judge
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-kit -> /Users/mac/.config/opencode/skills/frontend-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/mobile-kit -> /Users/mac/.config/opencode/skills/mobile-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/taste-reference -> /Users/mac/.config/opencode/skills/taste-reference
+would install /Users/mac/mie-1-probe-20261113/repo/skills/threeui -> /Users/mac/.config/opencode/skills/threeui
+would install /Users/mac/mie-1-probe-20261113/repo/skills/ui-ux-pro-max-reference -> /Users/mac/.config/opencode/skills/ui-ux-pro-max-reference
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-core -> /Users/mac/.config/opencode/skills/gsap-core
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-frameworks -> /Users/mac/.config/opencode/skills/gsap-frameworks
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-performance -> /Users/mac/.config/opencode/skills/gsap-performance
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-plugins -> /Users/mac/.config/opencode/skills/gsap-plugins
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-react -> /Users/mac/.config/opencode/skills/gsap-react
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-scrolltrigger -> /Users/mac/.config/opencode/skills/gsap-scrolltrigger
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-timeline -> /Users/mac/.config/opencode/skills/gsap-timeline
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-utils -> /Users/mac/.config/opencode/skills/gsap-utils
+would install <generated-variants>/opencode/impeccable -> /Users/mac/.config/opencode/skills/impeccable
+would install /Users/mac/mie-1-probe-20261113/repo/opencode/commands/impeccable.md -> /Users/mac/.config/opencode/commands/impeccable.md
+would install /Users/mac/mie-1-probe-20261113/repo/.opencode/commands/frontend-kit.md -> /Users/mac/.config/opencode/commands/frontend-kit.md
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-design -> /Users/mac/.copilot/skills/frontend-design
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-judge -> /Users/mac/.copilot/skills/frontend-judge
+would install /Users/mac/mie-1-probe-20261113/repo/skills/frontend-kit -> /Users/mac/.copilot/skills/frontend-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/mobile-kit -> /Users/mac/.copilot/skills/mobile-kit
+would install /Users/mac/mie-1-probe-20261113/repo/skills/taste-reference -> /Users/mac/.copilot/skills/taste-reference
+would install /Users/mac/mie-1-probe-20261113/repo/skills/threeui -> /Users/mac/.copilot/skills/threeui
+would install /Users/mac/mie-1-probe-20261113/repo/skills/ui-ux-pro-max-reference -> /Users/mac/.copilot/skills/ui-ux-pro-max-reference
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-core -> /Users/mac/.copilot/skills/gsap-core
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-frameworks -> /Users/mac/.copilot/skills/gsap-frameworks
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-performance -> /Users/mac/.copilot/skills/gsap-performance
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-plugins -> /Users/mac/.copilot/skills/gsap-plugins
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-react -> /Users/mac/.copilot/skills/gsap-react
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-scrolltrigger -> /Users/mac/.copilot/skills/gsap-scrolltrigger
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-timeline -> /Users/mac/.copilot/skills/gsap-timeline
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/gsap/gsap-utils -> /Users/mac/.copilot/skills/gsap-utils
+would install <generated-variants>/agents/impeccable -> /Users/mac/.copilot/skills/impeccable
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/ui-ux-pro-max/reference -> /Users/mac/.local/share/agent-design-references/ui-ux-pro-max
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/taste/skills -> /Users/mac/.local/share/agent-design-references/taste/skills
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/taste/assets -> /Users/mac/.local/share/agent-design-references/taste/assets
+would install /Users/mac/mie-1-probe-20261113/repo/vendor/taste/SOURCE.txt -> /Users/mac/.local/share/agent-design-references/taste/SOURCE.txt
+would link /Users/mac/.claude/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+would link /Users/mac/.agents/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+would link /Users/mac/.codex/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+would link /Users/mac/.config/opencode/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+would link /Users/mac/.copilot/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+would install /Users/mac/mie-1-probe-20261113/repo/.github/copilot-instructions.md -> /Users/mac/.github/copilot-instructions.md
+would attempt (best-effort, never fatal) with pinned versions:
+  - Impeccable hook: npx --yes impeccable@4.8.2 install --providers=<detected claude/codex> --scope=global (skipped with --skip-hooks)
+  - Playwright CLI: npm install -g @playwright/cli@0.1.24, then playwright-cli install-browser chrome-for-testing (skipped with --skip-eyes)
+  - Playwright MCP: host-CLI adds of npx -y @playwright/mcp@0.0.85 (skipped with --skip-mcp)
+  - Secret scanner (gate 1.1): gitleaks v8.30.1 pinned tarball to ~/.local/bin (skipped if gitleaks or trufflehog is already on PATH)
+  - Figma MCP: NOT installed (human OAuth — by design)
+
+DRY RUN complete — no files written, no hooks/MCP/verify attempted.
+DRYRUN_EXIT=0

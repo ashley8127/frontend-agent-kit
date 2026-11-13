@@ -1,0 +1,420 @@
+NODE: v24.22.1 NPM: 11.19.1
+START: 2026-11-13T02:36:44Z
+Hosts: claude codex opencode copilot
+Backup dir: /Users/mac/.local/share/frontend-agent-kit/backups/20261113T023644Z-6765
+Generated Impeccable host variants in /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.X2v68lh0tw
+Installed /Users/mac/.claude/skills/frontend-design
+Installed /Users/mac/.claude/skills/frontend-judge
+Installed /Users/mac/.claude/skills/frontend-kit
+Installed /Users/mac/.claude/skills/mobile-kit
+Installed /Users/mac/.claude/skills/taste-reference
+Installed /Users/mac/.claude/skills/threeui
+Installed /Users/mac/.claude/skills/ui-ux-pro-max-reference
+Installed /Users/mac/.claude/skills/gsap-core
+Installed /Users/mac/.claude/skills/gsap-frameworks
+Installed /Users/mac/.claude/skills/gsap-performance
+Installed /Users/mac/.claude/skills/gsap-plugins
+Installed /Users/mac/.claude/skills/gsap-react
+Installed /Users/mac/.claude/skills/gsap-scrolltrigger
+Installed /Users/mac/.claude/skills/gsap-timeline
+Installed /Users/mac/.claude/skills/gsap-utils
+Installed /Users/mac/.claude/skills/impeccable
+Installed /Users/mac/.agents/skills/frontend-design
+Installed /Users/mac/.agents/skills/frontend-judge
+Installed /Users/mac/.agents/skills/frontend-kit
+Installed /Users/mac/.agents/skills/mobile-kit
+Installed /Users/mac/.agents/skills/taste-reference
+Installed /Users/mac/.agents/skills/threeui
+Installed /Users/mac/.agents/skills/ui-ux-pro-max-reference
+Installed /Users/mac/.agents/skills/gsap-core
+Installed /Users/mac/.agents/skills/gsap-frameworks
+Installed /Users/mac/.agents/skills/gsap-performance
+Installed /Users/mac/.agents/skills/gsap-plugins
+Installed /Users/mac/.agents/skills/gsap-react
+Installed /Users/mac/.agents/skills/gsap-scrolltrigger
+Installed /Users/mac/.agents/skills/gsap-timeline
+Installed /Users/mac/.agents/skills/gsap-utils
+Installed /Users/mac/.agents/skills/impeccable
+Installed /Users/mac/.codex/skills/frontend-design
+Installed /Users/mac/.codex/skills/frontend-judge
+Installed /Users/mac/.codex/skills/frontend-kit
+Installed /Users/mac/.codex/skills/mobile-kit
+Installed /Users/mac/.codex/skills/taste-reference
+Installed /Users/mac/.codex/skills/threeui
+Installed /Users/mac/.codex/skills/ui-ux-pro-max-reference
+Installed /Users/mac/.codex/skills/gsap-core
+Installed /Users/mac/.codex/skills/gsap-frameworks
+Installed /Users/mac/.codex/skills/gsap-performance
+Installed /Users/mac/.codex/skills/gsap-plugins
+Installed /Users/mac/.codex/skills/gsap-react
+Installed /Users/mac/.codex/skills/gsap-scrolltrigger
+Installed /Users/mac/.codex/skills/gsap-timeline
+Installed /Users/mac/.codex/skills/gsap-utils
+Installed /Users/mac/.codex/skills/impeccable
+Installed /Users/mac/.config/opencode/skills/frontend-design
+Installed /Users/mac/.config/opencode/skills/frontend-judge
+Installed /Users/mac/.config/opencode/skills/frontend-kit
+Installed /Users/mac/.config/opencode/skills/mobile-kit
+Installed /Users/mac/.config/opencode/skills/taste-reference
+Installed /Users/mac/.config/opencode/skills/threeui
+Installed /Users/mac/.config/opencode/skills/ui-ux-pro-max-reference
+Installed /Users/mac/.config/opencode/skills/gsap-core
+Installed /Users/mac/.config/opencode/skills/gsap-frameworks
+Installed /Users/mac/.config/opencode/skills/gsap-performance
+Installed /Users/mac/.config/opencode/skills/gsap-plugins
+Installed /Users/mac/.config/opencode/skills/gsap-react
+Installed /Users/mac/.config/opencode/skills/gsap-scrolltrigger
+Installed /Users/mac/.config/opencode/skills/gsap-timeline
+Installed /Users/mac/.config/opencode/skills/gsap-utils
+Installed /Users/mac/.config/opencode/skills/impeccable
+Installed /Users/mac/.config/opencode/commands/impeccable.md
+Installed /Users/mac/.config/opencode/commands/frontend-kit.md
+Installed /Users/mac/.copilot/skills/frontend-design
+Installed /Users/mac/.copilot/skills/frontend-judge
+Installed /Users/mac/.copilot/skills/frontend-kit
+Installed /Users/mac/.copilot/skills/mobile-kit
+Installed /Users/mac/.copilot/skills/taste-reference
+Installed /Users/mac/.copilot/skills/threeui
+Installed /Users/mac/.copilot/skills/ui-ux-pro-max-reference
+Installed /Users/mac/.copilot/skills/gsap-core
+Installed /Users/mac/.copilot/skills/gsap-frameworks
+Installed /Users/mac/.copilot/skills/gsap-performance
+Installed /Users/mac/.copilot/skills/gsap-plugins
+Installed /Users/mac/.copilot/skills/gsap-react
+Installed /Users/mac/.copilot/skills/gsap-scrolltrigger
+Installed /Users/mac/.copilot/skills/gsap-timeline
+Installed /Users/mac/.copilot/skills/gsap-utils
+Installed /Users/mac/.copilot/skills/impeccable
+Installed /Users/mac/.local/share/agent-design-references/ui-ux-pro-max
+Installed /Users/mac/.local/share/agent-design-references/taste/skills
+Installed /Users/mac/.local/share/agent-design-references/taste/assets
+Installed /Users/mac/.local/share/agent-design-references/taste/SOURCE.txt
+Linked /Users/mac/.claude/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+Linked /Users/mac/.agents/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+Linked /Users/mac/.codex/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+Linked /Users/mac/.config/opencode/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+Linked /Users/mac/.copilot/skills/taste-reference/vendor -> /Users/mac/.local/share/agent-design-references
+Installed /Users/mac/.github/copilot-instructions.md
+
+Version check (warn only — pins are never auto-upgraded):
+PIN: impeccable pinned: skill 4.8.2, engine 0.1.21
+PIN: impeccable skill: current (4.8.2)
+DRIFT: impeccable engine: pinned 0.1.21, latest tag is 0.1.23 (re-pin skill+engine together — lockstep, A10)
+PIN: gsap-skills: current (aed9cfd)
+PIN: taste: current (v2.5.1)
+PIN: ui-ux-pro-max: current (v2.15.0)
+PIN: playwright/cli: current (0.1.24)
+PIN: playwright/mcp: current (0.0.85)
+check-versions: 1 drift warning(s). Re-pin deliberately; never auto-upgrade at install time.
+
+Installing Playwright CLI 0.1.24 (pinned)...
+OK: npm install -g @playwright/cli@0.1.24
+Playwright CLI + node resolved to real binaries: /Users/mac/.nvm/versions/node/v24.22.1/bin (mise shim bypassed — the shim fails from /tmp cwds)
+Playwright CLI resolves to: /Users/mac/.nvm/versions/node/v24.22.1/bin/playwright-cli
+Node resolves to: /Users/mac/.nvm/versions/node/v24.22.1/bin/node
+Playwright CLI canonical path: /Users/mac/.nvm/versions/node/v24.22.1/lib/node_modules/@playwright/cli/playwright-cli.js
+Node canonical path: /Users/mac/.nvm/versions/node/v24.22.1/bin/node
+Mise shims dir (anchor): /Users/mac/.local/share/mise/shims
+Node after PATH prepend: v24.22.1 (required >= 22)
+Playwright CLI version: 0.1.24 (pin 0.1.24)
+OK: playwright-cli install-browser chrome-for-testing
+
+Installing Impeccable hook (impeccable@4.8.2, providers=claude,codex, scope=global)...
+Codex hook promoted to global: /Users/mac/.codex/hooks.json (project copy removed — the hook now fires in all projects)
+OK: npx impeccable@4.8.2 install --providers=claude,codex --scope=global (verified — impeccable entry confirmed in host hook config)
+Restoring vendored Impeccable variant over the upstream hook-installer copy (installed version 4.8.2): /Users/mac/.claude/skills/impeccable
+Backed up /Users/mac/.claude/skills/impeccable
+Installed /Users/mac/.claude/skills/impeccable
+Restoring vendored Impeccable variant over the upstream hook-installer copy (installed version unknown): /Users/mac/.agents/skills/impeccable
+Backed up /Users/mac/.agents/skills/impeccable
+Installed /Users/mac/.agents/skills/impeccable
+PENDING: Playwright MCP: claude binary not on PATH. Run: claude mcp add --scope user playwright -- npx -y @playwright/mcp@0.0.85
+PENDING: Playwright MCP: codex binary not on PATH. Run: codex mcp add playwright -- npx -y @playwright/mcp@0.0.85
+OK: opencode mcp add playwright (verified — playwright entry confirmed in host config)
+OK: gitleaks 8.30.1 installed to ~/.local/bin/gitleaks, but ~/.local/bin is not on PATH — gate 1.1 still cannot see it.
+PENDING: gitleaks 8.30.1 is installed at ~/.local/bin/gitleaks but ~/.local/bin is not on PATH, so gate 1.1 still fails closed. Add it: export PATH="$HOME/.local/bin:$PATH" (e.g. in ~/.zshrc), then re-run ./verify.sh. Alternative scanners the gate also accepts: trufflehog (see https://github.com/trufflesecurity/trufflehog/releases).
+PENDING: Figma MCP is NOT installed (human OAuth — by design). When you want it, Claude Code: claude mcp add --transport http figma https://mcp.figma.com/mcp --scope user, then new session, /mcp -> figma -> Authenticate. Other hosts: add the same remote URL https://mcp.figma.com/mcp via that host's MCP add, then authenticate in the browser.
+
+Checking installed files (verify.sh, default mode)...
+verify.sh: running on macOS (Darwin) — supported. Known gaps on this OS: probes run unbounded when timeout(1) is absent (stock macOS has none; CI bounds the job with timeout-minutes), and the Playwright browser cache is ~/Library/Caches/ms-playwright.
+Hosts checked: claude codex opencode copilot
+Skills expected per host: frontend-design frontend-judge frontend-kit mobile-kit taste-reference threeui ui-ux-pro-max-reference gsap-core gsap-frameworks gsap-performance gsap-plugins gsap-react gsap-scrolltrigger gsap-timeline gsap-utils impeccable
+OK: skills present: claude (/Users/mac/.claude/skills)
+OK: skills present: codex (/Users/mac/.agents/skills)
+OK: skills present: codex (/Users/mac/.codex/skills)
+OK: skills present: opencode (/Users/mac/.config/opencode/skills)
+OK: skills present: opencode (/Users/mac/.agents/skills)
+OK: copilot fallback copy present (/Users/mac/.copilot/skills)
+OK: copilot instructions present (/Users/mac/.github/copilot-instructions.md)
+OK: no stale ${CLAUDE_PLUGIN_ROOT} in installed skills
+OK: Impeccable SKILL.md spec-pure (version in metadata, no placeholders): /Users/mac/.agents/skills/impeccable/SKILL.md
+OK: Impeccable SKILL.md spec-pure (version in metadata, no placeholders): /Users/mac/.claude/skills/impeccable/SKILL.md
+OK: Impeccable SKILL.md spec-pure (version in metadata, no placeholders): /Users/mac/.config/opencode/skills/impeccable/SKILL.md
+OK: Impeccable SKILL.md spec-pure (version in metadata, no placeholders): /Users/mac/.codex/skills/impeccable/SKILL.md
+OK: Impeccable SKILL.md spec-pure (version in metadata, no placeholders): /Users/mac/.copilot/skills/impeccable/SKILL.md
+OK: taste-reference wrapper paths resolve (all cited anchors present)
+OK: no live builder-self-grade language in installed skills (sentence-scoped prohibiting mentions allowlisted — see §2d comment)
+OK: installed gate present in 5 frontend-kit copy/copies (all 16 files, gate.sh executable, D13 content anchors present)
+OK: installed templates present in 5 frontend-kit copy/copies (15 files + motion refs, D14 content anchors present)
+OK: engine lockstep: repo pin 0.1.21, installed skill expects 0.1.21, engine reports 0.1.21
+OK: engine binary hash-verified against repo engine-checksums.txt (/Users/mac/.impeccable/bin/0.1.21/impeccable, impeccable-darwin-arm64 0.1.21)
+OK: vendored-allowlist.txt pin header matches the SOURCES.md taste pin (v2.5.1 f6b76575f949707b4e3c37cd86cb44b0b98643e8)
+NOTE: 17 sink file(s) in the vendored tree NOT on the inclusion list (lab/demo/catalog by classification, or NEW — review each against the inclusion list at re-pin; a new runtime file enters the manifest ONLY by being added to the list after classification):
+assets/components/_lab.html
+assets/components/index.html
+assets/diagrams/demo.html
+assets/diagrams/lab.html
+assets/effects/gallery.html
+assets/effects/lab.html
+assets/layout/check.mjs
+assets/layout/fonts.html
+assets/objects/_print-core/demo.js
+assets/objects/_print-core/make-fallbacks.html
+assets/objects/_scenes/demo.js
+assets/objects/index.html
+assets/objects/photo-kit/demo.js
+assets/objects/product-render/make-posters.html
+assets/objects/product-turntable/make-fallbacks.html
+assets/ui/_lab/loops.html
+assets/ui/index.html
+OK: vendored-allowlist.txt matches the vendored taste tree hash-for-hash (27 entries, pin v2.5.1 f6b76575f949707b4e3c37cd86cb44b0b98643e8)
+OK: impeccable detect runs clean on the fixture
+FAIL: gate scripts failed on the fixture (repo clone gate.sh on fixture) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/gate.log (log removed with temp dir; re-run gate.sh --target <dir> to reproduce)
+GATE: impeccable detect runs per built .html file (directory mode is regex-only and approximate — N7 — and would also scan unpicked design/variants/)
+GATE: impeccable detect: clean (/var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/index.html)
+GATE: anti-cliché checks: clean (ANTI-CLICHE RESULT: PASS (no unwaived findings))
+GATE: token-naming lint: clean (LINT-TOKENS: clean (8 tokens in /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/design/tokens.css, 1 page(s)))
+GATE: html-validate not installed — skipped (npx html-validate to add it)
+GATE: pa11y not installed — skipped (npx pa11y to add it)
+GATE: converge check: green for /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/index.html (CONVERGE RESULT: PASS (3 sections present))
+GATE FAIL: security 1.1: secret scan: no secret scanner installed (gitleaks or trufflehog) — install one; the built-in pattern grep found nothing, but a pattern grep is not a scanner verdict (fail closed)
+SECURITY 1.2: PASS — no unsanitized HTML sink (every sink file either calls DOMPurify.sanitize or is a byte-identical vendored taste asset, D9)
+SECURITY 1.3: PASS — no eval / Function / string-timer sink
+SECURITY 1.4: PASS — no template-interpolated data in SQL/shell/query calls
+SECURITY 1.5: PASS — no javascript: URL in href/src/action
+SECURITY 1.6: N/A — no package.json under /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8 — no dependencies to vet (existence/pinning/lockfile/integrity vacuous)
+SECURITY 1.7: N/A — no package.json — no dependencies to scan for CVEs
+SECURITY 1.8: N/A — no server or deployment config in scope — CSP/HSTS are the hosting layer's responsibility for a purely static build (recorded, not verified)
+SECURITY 1.9: PASS — no weak crypto (no MD5/SHA1-for-security, no createCipher, no Math.random() for secrets/tokens)
+SECURITY 1.10: N/A — no package.json — no production tree to licence-scan
+SECURITY 1.11: N/A — no LLM/API call detected in the built files — no consumption to bound
+SECURITY 1.12: N/A — no package.json — no dependency installs to police
+SECURITY: 5 PASS, 1 FAIL, 6 N/A (Stage 1 checks 1.1–1.12; see SECURITY 1.<n> lines above)
+GATE RESULT: FAIL (1 issue(s)) — fix findings, no vision round spent.
+FAIL: gate scripts failed on the fixture (installed gate.sh on fixture (/Users/mac/.agents/skills/frontend-kit/scripts/gate/gate.sh)) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/gate-installed.log (log removed with temp dir; re-run gate.sh --target <dir> to reproduce)
+GATE: impeccable detect runs per built .html file (directory mode is regex-only and approximate — N7 — and would also scan unpicked design/variants/)
+GATE: impeccable detect: clean (/var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/index.html)
+GATE: anti-cliché checks: clean (ANTI-CLICHE RESULT: PASS (no unwaived findings))
+GATE: token-naming lint: clean (LINT-TOKENS: clean (8 tokens in /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/design/tokens.css, 1 page(s)))
+GATE: html-validate not installed — skipped (npx html-validate to add it)
+GATE: pa11y not installed — skipped (npx pa11y to add it)
+GATE: converge check: green for /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/index.html (CONVERGE RESULT: PASS (3 sections present))
+GATE FAIL: security 1.1: secret scan: no secret scanner installed (gitleaks or trufflehog) — install one; the built-in pattern grep found nothing, but a pattern grep is not a scanner verdict (fail closed)
+SECURITY 1.2: PASS — no unsanitized HTML sink (every sink file either calls DOMPurify.sanitize or is a byte-identical vendored taste asset, D9)
+SECURITY 1.3: PASS — no eval / Function / string-timer sink
+SECURITY 1.4: PASS — no template-interpolated data in SQL/shell/query calls
+SECURITY 1.5: PASS — no javascript: URL in href/src/action
+SECURITY 1.6: N/A — no package.json under /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8 — no dependencies to vet (existence/pinning/lockfile/integrity vacuous)
+SECURITY 1.7: N/A — no package.json — no dependencies to scan for CVEs
+SECURITY 1.8: N/A — no server or deployment config in scope — CSP/HSTS are the hosting layer's responsibility for a purely static build (recorded, not verified)
+SECURITY 1.9: PASS — no weak crypto (no MD5/SHA1-for-security, no createCipher, no Math.random() for secrets/tokens)
+SECURITY 1.10: N/A — no package.json — no production tree to licence-scan
+SECURITY 1.11: N/A — no LLM/API call detected in the built files — no consumption to bound
+SECURITY 1.12: N/A — no package.json — no dependency installs to police
+SECURITY: 5 PASS, 1 FAIL, 6 N/A (Stage 1 checks 1.1–1.12; see SECURITY 1.<n> lines above)
+GATE RESULT: FAIL (1 issue(s)) — fix findings, no vision round spent.
+OK: installed gate leg 2 green (gate.mjs on fixture)
+FAIL: installed gate.sh --self-test failed — see the installed self-test log (log removed with temp dir)
+GATE: impeccable detect runs per built .html file (directory mode is regex-only and approximate — N7 — and would also scan unpicked design/variants/)
+GATE: impeccable detect: clean (/var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.o8et1iO67l/index.html)
+GATE: anti-cliché checks: clean (ANTI-CLICHE RESULT: PASS (no unwaived findings))
+GATE: token-naming lint: clean (LINT-TOKENS: clean (1 tokens in /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.o8et1iO67l/design/tokens.css, 1 page(s)))
+GATE: html-validate not installed — skipped (npx html-validate to add it)
+GATE: pa11y not installed — skipped (npx pa11y to add it)
+GATE: converge check skipped: no design/PLAN.md under /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.o8et1iO67l (step 1 writes the plan; a build without a plan cannot be converge-checked)
+GATE FAIL: security 1.1: secret scan: no secret scanner installed (gitleaks or trufflehog) — install one; the built-in pattern grep found nothing, but a pattern grep is not a scanner verdict (fail closed)
+SECURITY 1.2: PASS — no unsanitized HTML sink (every sink file either calls DOMPurify.sanitize or is a byte-identical vendored taste asset, D9)
+SECURITY 1.3: PASS — no eval / Function / string-timer sink
+SECURITY 1.4: PASS — no template-interpolated data in SQL/shell/query calls
+SECURITY 1.5: PASS — no javascript: URL in href/src/action
+SECURITY 1.6: N/A — no package.json under /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.o8et1iO67l — no dependencies to vet (existence/pinning/lockfile/integrity vacuous)
+SECURITY 1.7: N/A — no package.json — no dependencies to scan for CVEs
+SECURITY 1.8: N/A — no server or deployment config in scope — CSP/HSTS are the hosting layer's responsibility for a purely static build (recorded, not verified)
+SECURITY 1.9: PASS — no weak crypto (no MD5/SHA1-for-security, no createCipher, no Math.random() for secrets/tokens)
+SECURITY 1.10: N/A — no package.json — no production tree to licence-scan
+SECURITY 1.11: N/A — no LLM/API call detected in the built files — no consumption to bound
+SECURITY 1.12: N/A — no package.json — no dependency installs to police
+SECURITY: 5 PASS, 1 FAIL, 6 N/A (Stage 1 checks 1.1–1.12; see SECURITY 1.<n> lines above)
+GATE RESULT: FAIL (1 issue(s)) — fix findings, no vision round spent.
+OK: run-log refuses record --gate pass without artifacts (exit 2, nothing written)
+OK: run-log refuses record --gate pass with an artifact missing its PASS marker (exit 2, nothing written)
+OK: run-log records record --gate pass with well-formed artifacts (gateLeg1/gateLeg2 + gateLeg1Sha/gateLeg2Sha)
+OK: run-log refuses land --gate pass without artifacts (exit 2, nothing written)
+OK: run-log records land --gate pass with well-formed artifacts
+OK: run-log refuses record --gate pass with stale artifacts (exit 2, nothing written)
+OK: run-log refuses record --gate pass with an absolute artifact path (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a '..' escape artifact (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a leg-1 artifact carrying a FAIL verdict (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a leg-2 artifact carrying a FAIL verdict (exit 2, nothing written)
+OK: run-log refuses record --gate pass with one file as both legs (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a hardlink pair as both legs (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page outside the project (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page as its own artifact (exit 2, nothing written)
+OK: run-log refuses land --gate pass with --page outside the project (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a symlink artifact (exit 2, nothing written)
+OK: run-log refuses record --gate pass with design/ symlinked outside the project (exit 2, nothing written)
+OK: run-log refuses crosscheck and land --gate pass with design/ symlinked outside the project (exit 2, containment message, nothing written)
+OK: run-log records record --gate pass with design/ symlinked inside the project (exit 0)
+OK: run-log refuses record --gate pass with --page hardlinked to gate-leg1.log (exit 2, nothing written)
+OK: run-log refuses land --gate pass with --page hardlinked to gate-leg1.log (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page hardlinked to gate-leg2.log (exit 2, nothing written)
+OK: run-log refuses land --gate pass with --page hardlinked to gate-leg2.log (exit 2, nothing written)
+OK: run-log refuses record --gate pass with an ancient --page inside design/ (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page README.md (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a freshly created backdated --page (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a symlinked design/tokens.css fallback (exit 2, nothing written)
+OK: run-log records record --gate pass with FAILURE/FAILED lines in a passing log (exit 0)
+OK: run-log records --gate fail with an outside --page as page: null with a warning (exit 0)
+OK: run-log records --gate fail with --page as an artifact as page: null with a warning (exit 0)
+OK: run-log records --gate fail with a valid --page (exit 0, canonical page stored)
+OK: run-log records record --gate pass with a fresh --page inside design/ (exit 0)
+OK: run-log records record --gate pass with --page design/tokens.css (exit 0)
+OK: run-log records record --gate pass with --page hardlinked to tokens.css (exit 0)
+OK: run-log refuses record --gate pass with design/tokens.css as a directory (exit 2, nothing written)
+OK: run-log refuses land --gate pass with design/tokens.css as a directory (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/.html (exit 2, nothing written)
+OK: run-log records record --gate pass with NBSP inside the PASS line (exit 0)
+OK: run-log records record --gate pass with a trailing ZWSP after the PASS line (exit 0)
+OK: run-log refuses record --gate pass with a nested-symlink design/ (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a missing design/tokens.css plus --page (exit 2, nothing written)
+OK: run-log records --gate fail with --page a directory as page: null with a warning (exit 0)
+OK: run-log records --gate fail with a nonexistent --page as page: null with a warning (exit 0)
+OK: run-log records --gate fail with an empty --page as page: null with no warning (exit 0)
+OK: run-log records --gate fail with a symlinked design/ and valid --page as page: null with a warning, real log unchanged (exit 0)
+OK: run-log refuses record --gate pass with --page design/page.htm (exit 2, nothing written)
+OK: run-log records record --gate pass with a trailing-slash --page (exit 0, canonical page stored)
+OK: run-log records record --gate pass with mixed-case FAIL lines alongside a real PASS line (exit 0)
+OK: run-log records record --gate pass with U+2003 inside the PASS line (exit 0)
+OK: run-log records record --gate pass with U+2003 inside the leg-2 PASS line (exit 0)
+OK: run-log refuses record --gate pass with a U+2003 FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a U+2003 FAIL line alongside a real GREEN line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with ZWSP substituting for the space in the PASS line (exit 0)
+OK: run-log records record --gate pass with ZWSP substituting for the space in the leg-2 PASS line (exit 0)
+OK: run-log refuses record --gate pass with a ZWSP-substituted FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a ZWSP-substituted FAIL line alongside a real GREEN line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with U+180E inside the PASS line (exit 0)
+OK: run-log records record --gate pass with U+180E inside the leg-2 PASS line (exit 0)
+OK: run-log refuses record --gate pass with design/tokens.css as a FIFO (exit 2, nothing written)
+OK: run-log refuses record --gate pass with design/tokens.css as a Unix socket (exit 2, nothing written)
+OK: run-log refuses record --gate pass with design/tokens.css as a directory and no --page (exit 2, fallback message, nothing written)
+OK: run-log refuses record --gate pass with --page design/tokens.css when tokens.css is a directory (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/..html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/a.html plus a trailing space (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/.HTML (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/x.html.html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a U+2060 FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a U+2060 FAIL line alongside a real GREEN line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with U+2060 inside the PASS line (exit 0)
+OK: run-log refuses record --gate pass with an NBSP inside the FAIL word alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a U+2003 inside the FAIL word alongside a real GREEN line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with a ZWSP-split FAILURE line alongside a real PASS line (exit 0)
+OK: run-log records record --gate pass with a ZWSP-split FAILURE line alongside a real GREEN line (exit 0)
+OK: run-log refuses record --gate pass with a U+180E FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a U+180E FAIL line and no PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with ZWNJ substituting for the space in the PASS line (exit 0)
+OK: run-log records record --gate pass with ZWJ substituting for the space in the PASS line (exit 0)
+OK: run-log records record --gate pass with BOM substituting for the space in the PASS line (exit 0)
+OK: run-log records record --gate pass with U+1680 inside the PASS line (exit 0)
+OK: run-log refuses record --gate pass with a U+2003 FAIL line and no PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses land --gate pass with a U+2003 FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records land --gate pass with ZWSP substituting for the space in the PASS line (exit 0)
+OK: run-log refuses land --gate pass with design/tokens.css as a FIFO (exit 2, nothing written)
+OK: run-log refuses land --gate pass with --page design/..html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with a ZWJ FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a U+3164 FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with a U+2800 FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with U+3164 inside the PASS line (exit 0)
+OK: run-log refuses record --gate pass with a U+3164 FAIL line alongside a real GREEN line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with an NFC FÄIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with an NFD FÄIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with NFC PÀSS inside the PASS line (exit 0)
+OK: run-log refuses record --gate pass with a U+FFFD-inserted FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log records record --gate pass with a U+FFFD-substituted FAIL line alongside a real PASS line (exit 0, KNOWN LIMITATION (F8 residual))
+OK: run-log records record --gate pass with a real-0xFF-substituted FAIL line alongside a real PASS line (exit 0, KNOWN LIMITATION (F8 residual))
+OK: run-log records record --gate pass with FAIL<U+3164>URE alongside a real PASS line (exit 0)
+OK: run-log refuses record --gate pass with a U+13441 FAIL line alongside a real PASS line (exit 2, FAIL-verdict message, nothing written)
+OK: run-log refuses record --gate pass with --page design/../design/page.html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/sub/../page.html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --page design/./page.html (exit 2, nothing written)
+OK: run-log refuses record --gate pass with --gate-leg1 design/../design/gate-leg1.log (exit 2, nothing written)
+OK: run-log refuses land --gate pass with --page design/../design/page.html (exit 2, nothing written)
+OK: run-log refuses graded record without --judge-report (exit 2, nothing written)
+OK: run-log refuses record citing a missing judge artifact (exit 2, nothing written)
+OK: run-log refuses record citing an absolute-path judge artifact (exit 2, nothing written)
+OK: run-log refuses record citing a symlinked judge artifact (exit 2, nothing written)
+OK: run-log refuses record citing an empty judge artifact (exit 2, nothing written)
+OK: run-log refuses record citing the unfilled judge skeleton (exit 2, nothing written)
+sed: -e: No such file or directory
+FAIL: judge-artifact (D15): record citing an artifact of another round was refused but not via the expected message (/is a report for round/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t7.log
+run-log: REJECTED — --judge-report file design/judge/round-1.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): headline positive (prepare -> fill -> record) failed — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t8.log
+run-log: REJECTED — --judge-report file design/judge/round-1.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): record reusing a judge artifact was refused but not via the expected message (/already been cited/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t9.log
+run-log: REJECTED — --judge-report file design/judge/round-1.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+OK: run-log refuses no-grade record citing a judge artifact (exit 2, nothing written)
+OK: run-log refuses allowed grader with --scores none (exit 2, nothing written)
+OK: run-log refuses scores recorded on a failed gate (exit 2, nothing written)
+sed: -e: No such file or directory
+FAIL: judge-artifact (D15): record whose --scores differ from the artifact was refused but not via the expected message (/judge artifact records/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t13.log
+run-log: REJECTED — --judge-report file design/judge/round-2.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): record whose --grader differs from the artifact was refused but not via the expected message (/names grader/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t14.log
+run-log: REJECTED — --judge-report file design/judge/round-2.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): record whose --basis differs from the artifact was refused but not via the expected message (/different independence basis/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t15.log
+run-log: REJECTED — --judge-report file design/judge/round-2.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): record after the page was edited post-judging was refused but not via the expected message (/page changed after judging/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t16.log
+run-log: REJECTED — --judge-report file design/judge/round-2.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): record citing a judge artifact older than the page was refused but not via the expected message (/is older than/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t17.log
+run-log: REJECTED — --judge-report file design/judge/round-2.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): round 2 positive record failed — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t17b.log
+run-log: REJECTED — --judge-report file design/judge/round-2.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+sed: -e: No such file or directory
+FAIL: judge-artifact (D15): record after tokens.css was edited post-judging was refused but not via the expected message (/binds to tokens-sha256/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t18.log
+run-log: REJECTED — --judge-report file design/judge/round-3.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): round 3 positive record failed — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t18b.log
+run-log: REJECTED — --judge-report file design/judge/round-3.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+OK: run-log refuses feedback --score-after without a regrade artifact (exit 2, nothing written)
+OK: run-log refuses feedback --score-after with caller-asserted --evidence (exit 2, nothing written)
+sed: -e: No such file or directory
+FAIL: judge-artifact (D15): feedback with a regrade artifact failed — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t21.log
+run-log: REJECTED — --judge-report file design/judge/round-3-regrade.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+sed: -e: No such file or directory
+sed: -e: No such file or directory
+sed: -e: No such file or directory
+sed: -e: No such file or directory
+FAIL: judge-artifact (D15): jury record citing only two juror artifacts was refused but not via the expected message (/one report per juror/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t22.log
+run-log: REJECTED — --judge-report file design/judge/round-4.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): jury record whose votes differ from the artifacts was refused but not via the expected message (/do not match the jury artifacts/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t23.log
+run-log: REJECTED — --judge-report file design/judge/round-4.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): jury positive record failed — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t24.log
+run-log: REJECTED — --judge-report file design/judge/round-4.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+sed: -e: No such file or directory
+sed: -e: No such file or directory
+sed: -e: No such file or directory
+FAIL: judge-artifact (D15): pairwise record citing only one pairwise artifact was refused but not via the expected message (/one report per pairwise judge call/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t25.log
+run-log: REJECTED — --judge-report file design/judge/round-5.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+FAIL: judge-artifact (D15): pairwise record citing the same artifact twice was refused but not via the expected message (/is the same file as/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t26.log
+run-log: REJECTED — --judge-report file design/judge/round-5.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+sed: 1: "/var/folders/43/99hx1_n ...": invalid command code f
+FAIL: judge-artifact (D15): pairwise record whose artifacts disagree after derivation was refused but not via the expected message (/disagree after A/B derivation/) — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t27.log
+run-log: REJECTED — --judge-report file design/judge/round-5.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+sed: 1: "/var/folders/43/99hx1_n ...": invalid command code f
+FAIL: judge-artifact (D15): pairwise positive record failed — see /var/folders/43/99hx1_nj77j3044w6r2r3wbw0000gn/T/tmp.6uNfwvuKq8/judge-t28.log
+run-log: REJECTED — --judge-report file design/judge/round-5.md is not a well-formed judge report: the report still carries its PENDING skeleton line — the judge has not filled it in; the Type score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Type evidence cell is empty or unfilled; the Layout score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Layout evidence cell is empty or unfilled; the Colour score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Colour evidence cell is empty or unfilled; the Space score cell is "?", not an integer 1-5 (an unfilled "?" cell is not a score); the Space evidence cell is empty or unfilled; the body has no filled "Fix order:" line. No entry written.
+OK: run-log refuses expert score without an expert artifact (exit 2, nothing written)
+/Users/mac/mie-1-probe-20261113/repo/verify.sh: line 2959: grader_args[@]: unbound variable
+
+verify.sh reported failures (see above). Files are installed; fix the failures before relying on the loop.
+Backup (if anything was replaced): /Users/mac/.local/share/frontend-agent-kit/backups/20261113T023644Z-6765
+END: 2026-11-13T02:39:56Z
+INSTALL_EXIT=1
