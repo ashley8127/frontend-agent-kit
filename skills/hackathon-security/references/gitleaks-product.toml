@@ -2,8 +2,14 @@
 #
 # Copy to the product repo root as `.gitleaks.toml` at FLEET-3 (product
 # repo creation) and run:
-#   gitleaks detect --config .gitleaks.toml --source . --verbose
+#   gitleaks detect --no-git --config .gitleaks.toml --source . --verbose
 # Expected on a clean tree: "no leaks found". Any finding is a STOP.
+#
+# The --no-git flag is load-bearing, not cosmetic: it makes gitleaks scan
+# the working tree. Without it, gitleaks defaults to git-history mode —
+# and on a NON-git directory (e.g. a bare fixture tree) it scans 0 bytes
+# and still reports "no leaks found" (fail-open). Always check the
+# "scanned ~N bytes" line: if it reads 0 bytes, the run proved nothing.
 #
 # This is deliberately NOT a copy of the kit's gate config
 # (skills/frontend-kit/scripts/gate/.gitleaks.toml): that config
