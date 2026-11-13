@@ -395,7 +395,11 @@ which is where the gate scripts now live.
   there is no advisory mode. Absence of PLAN.md skips with a note, never
   a failure; skipped with a warning when node is absent (then run
   `references/converge-checklist.md` by hand before the human gate).
-- `npx html-validate` + `npx pa11y --standard WCAG2AA` where available.
+- `npx html-validate` + `npx pa11y --standard WCAG2AA` where available
+  (web surfaces only — D47: pa11y is web-only; a native app is gated by
+  the manual checklist on the real phone, VoiceOver/TalkBack + 200% text
+  — run the gate with `--native` and record pa11y as 'N/A — native app',
+  never a pass).
 - FAIL blocks the round. The gate result is printed, not summarised.
 
 **Brief-type scope — the landing-page gate does NOT apply unchanged to
@@ -412,7 +416,12 @@ every brief:**
 | section-gaps (dead-band ceiling) | Applies — no content-to-content gap over 288px at desktop widths (vw ≥ 1024); below 1024px gaps inflate with the viewport, so the structural hero-height rule governs instead (F-3) | Applies per panel/card gaps where the layout has them | Same as its type |
 | `mailto:` / `tel:` / `javascript:` links (leg 1 static check) | Applies — non-file schemes are exempt from the file-reference check; a legitimate `mailto:` CTA never fails leg 1 as "referenced file missing" (F-1) | Applies | Applies |
 | product-shown | Applies ONLY to physical-product pages (kind `product`); does NOT apply to software/service/app pages | Does NOT apply | Same as its type |
-| html-validate / pa11y WCAG2AA | Applies | Applies | Applies, plus: existing content and links survive (dropped content / dead links = FAIL) |
+| html-validate / pa11y WCAG2AA (web surfaces only — D47) | Applies | Applies | Applies, plus: existing content and links survive (dropped content / dead links = FAIL) |
+
+D47: pa11y is web-only. A native app (Expo/React Native) is gated by the
+manual a11y checklist on the real demo phone (VoiceOver/TalkBack + 200%
+text, `swarm/app-quality-brief.md` §1.6); run the gate with `--native`
+and record pa11y as 'N/A — native app' — never a fake pass.
 
 `taste-reference` stays the default taste lens on every build; what is
 scoped here is the GATE checks, not the lens.

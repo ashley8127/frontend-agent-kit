@@ -16,7 +16,9 @@ pass: a page nobody can operate fails even if it looks right.
 2. `design/TASTE.md` + the chosen DESIGN.md file(s) (the locked direction).
 3. Screenshots at 1440 / 768 / 390, plus the gate result (`pa11y
    --standard WCAG2AA` where available, `html-validate`, and the
-   consistency checker's tap-size / contrast findings). Grade from the
+   consistency checker's tap-size / contrast findings). Web pages only —
+   pa11y is web-only (D47); a native app is gated by the manual checklist
+   in `swarm/app-quality-brief.md` §1.6, not by this expert. Grade from the
    rendered page and the gate output, not from the HTML alone.
 4. The gate result for this round. A red gate means there is nothing to
    grade: return no scores and say the gate must go green first.

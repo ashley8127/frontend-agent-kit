@@ -93,6 +93,12 @@
 #      demo target too — the template must pass its own lint.
 #   4. Optional validators when installed: html-validate, pa11y
 #      (--standard WCAG2AA). Absent = skipped with a warning, never fatal.
+#      D47: pa11y is WEB-ONLY. On a native-app target (--native) pa11y
+#      never runs and is recorded "N/A — native app"; the native-app a11y
+#      gate is the manual checklist (VoiceOver/TalkBack + 200% text on the
+#      real phone — swarm/app-quality-brief.md §1.6), printed PENDING by
+#      this step, never a fake pass. A web run with zero .html files prints
+#      an explicit nothing-scanned note instead of passing pa11y vacuously.
 #   5. Converge check (P2, 2026-11-10): scripts/gate/converge-check.mjs
 #      against every built page — but ONLY when design/PLAN.md exists
 #      under the project dir (step 1 writes the plan; a build without a
@@ -137,8 +143,12 @@
 #      only (§8.6); 1.6's slopsquatting rationale rests on the USENIX
 #      2025 abstract + introduction only (full paper CHƯA ĐỌC, §8.6).
 #
-# Usage: gate.sh --target <dir-or-file> [--launcher <path-to-impeccable>] [--security-only]
+# Usage: gate.sh --target <dir-or-file> [--launcher <path-to-impeccable>] [--security-only] [--native]
 #        gate.sh --self-test   (runs against its own bundled fixture logic)
+#        --native: the target is a native app (Expo/React Native) — pa11y is
+#        web-only, so it is recorded "N/A — native app" and the manual a11y
+#        checklist (VoiceOver/TalkBack + 200% text on the real phone) is
+#        printed PENDING, never passed (D47).
 # Exit: 0 pass, 2 findings/fail, 1 usage error.
 set -uo pipefail
 
@@ -146,13 +156,15 @@ target=""
 launcher=""
 self_test=0
 security_only=0
+native_target=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --target) target="$2"; shift 2 ;;
     --launcher) launcher="$2"; shift 2 ;;
     --self-test) self_test=1; shift ;;
     --security-only) security_only=1; shift ;;
-    --help|-h) printf 'Usage: gate.sh --target <dir-or-file> [--launcher <impeccable>] [--security-only] | gate.sh --self-test\n'; exit 0 ;;
+    --native) native_target=1; shift ;;
+    --help|-h) printf 'Usage: gate.sh --target <dir-or-file> [--launcher <impeccable>] [--security-only] [--native] | gate.sh --self-test\n'; exit 0 ;;
     *) printf 'Unknown argument: %s\n' "$1" >&2; exit 1 ;;
   esac
 done
@@ -527,8 +539,30 @@ if command -v html-validate >/dev/null 2>&1; then
   # Index loops (same empty-array-under-`set -u` reason as §3 above).
   for ((_fi=0; _fi<${#html_files[@]}; _fi++)); do f="${html_files[$_fi]}"; html-validate "$f" >/dev/null 2>&1 || fail "html-validate failed on $f"; done
 else note "html-validate not installed — skipped (npx html-validate to add it)"; fi
-if command -v pa11y >/dev/null 2>&1; then
-  for ((_fi=0; _fi<${#html_files[@]}; _fi++)); do f="${html_files[$_fi]}"; pa11y --standard WCAG2AA "$f" >/dev/null 2>&1 || fail "pa11y WCAG2AA failed on $f"; done
+# D47: pa11y is web-only. On a native-app target it NEVER runs and NEVER
+# passes: the native-app a11y gate is the manual checklist (VoiceOver /
+# TalkBack + 200% text on the real phone — swarm/app-quality-brief.md
+# §1.6). The checklist items below are PENDING, not passed: they can only
+# be verified on the real demo phone (D70, 15:00–15:30 on build day), so a
+# native gate PASS here means "deterministic legs green" and the a11y leg
+# is still open until the phone run. Record "N/A — native app", never a
+# fake pass.
+if [[ "$native_target" == 1 ]]; then
+  note "pa11y: N/A — native app (pa11y is web-only; the native-app a11y gate is the manual checklist on the real phone: VoiceOver/TalkBack + 200% text — see swarm/app-quality-brief.md §1.6)"
+  printf 'A11Y (native): PENDING — manual checklist on the real demo phone (not passed by this gate run):\n'
+  printf '  [ ] contrast: every text pair measured (theme.ts success/warning fixed or restricted; border never the sole indicator)\n'
+  printf '  [ ] tap targets: every interactive element >=48x48 hit area, >=8dp apart\n'
+  printf '  [ ] labels: every icon-only button has accessibilityLabel; every control has accessibilityRole; AI busy state sets accessibilityState={{ busy: true }}\n'
+  printf '  [ ] dynamic type: largest system text (200%%) — no clipping, no overlap, no fixed-height truncation\n'
+  printf '  [ ] screen reader: VoiceOver/TalkBack walkthrough of the main flow — AI action triggerable, result announced\n'
+  printf '  [ ] reduced motion: toggle on — animations off, content identical\n'
+  printf '  [ ] safe area: notch + home indicator clear on every screen\n'
+elif command -v pa11y >/dev/null 2>&1; then
+  if [[ "${#html_files[@]}" -eq 0 ]]; then
+    note "pa11y: no .html files under $target — nothing scanned (a zero-file run is not a pass; if this target is a native app, re-run with --native — pa11y is web-only, D47)"
+  else
+    for ((_fi=0; _fi<${#html_files[@]}; _fi++)); do f="${html_files[$_fi]}"; pa11y --standard WCAG2AA "$f" >/dev/null 2>&1 || fail "pa11y WCAG2AA failed on $f"; done
+  fi
 else note "pa11y not installed — skipped (npx pa11y to add it)"; fi
 
 # --- 5. converge check (P2) ----------------------------------------------------
@@ -1517,5 +1551,5 @@ if [[ "$security_only" == 1 ]]; then
 fi
 
 if [[ "$fails" -gt 0 ]]; then printf 'GATE RESULT: FAIL (%s issue(s)) — fix findings, no vision round spent.\n' "$fails"; exit 2; fi
-printf 'GATE RESULT: PASS\n'
+if [[ "$native_target" == 1 ]]; then printf 'GATE RESULT: PASS (deterministic legs green; native a11y checklist PENDING — run on the real demo phone before the human gate; pa11y N/A — native app)\n'; else printf 'GATE RESULT: PASS\n'; fi
 exit 0
