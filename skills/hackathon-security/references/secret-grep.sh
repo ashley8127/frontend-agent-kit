@@ -13,8 +13,13 @@
 # Two load-bearing details in the pattern:
 # 1. The space inside (RSA |EC |OPENSSH )? — without it the pattern
 #    requires the literal string "OPENSSHPRIVATE" and can never match a
-#    real "-----BEGIN OPENSSH PRIVATE KEY-----" header. The broken form
+#    real OpenSSH private-key header. The broken form
 #    was run against a real header on 2026-11-13 and confirmed to miss it.
+#    (The header is described, not quoted, here: quoting the literal
+#    header text in this comment tripped gitleaks' own private-key rule
+#    on this file — the kit repo was not gitleaks-clean under its own
+#    config until this rewording, found 2026-11-14. The PATTERN line
+#    below keeps the regex group form, which gitleaks does not flag.)
 # 2. The AIza[0-9A-Za-z_-]{35} alternative — a Google API key is 39
 #    chars total ("AIza" + 35). Without this alternative a Google key
 #    in the bundle goes undetected (found in the same smoke test).
