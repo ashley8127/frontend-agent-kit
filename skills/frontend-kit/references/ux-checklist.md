@@ -578,6 +578,9 @@ AAA is not recommended as a whole-site policy):
 - **Gate labels:** pa11y is NOT installed on this VM (verified
   2026-11-10) — the gate's WCAG coverage is conditional on the tool
   being present at all. Do not write a rule that assumes pa11y ran.
+  pa11y is web-only (D47): it never gates a native app — record
+  'N/A — native app' and use the manual checklist (VoiceOver/TalkBack
+  + 200% text on the real phone).
 
 ## 5. Patterns — format, vocabulary, two measured cases
 
