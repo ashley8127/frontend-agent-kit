@@ -64,7 +64,19 @@ npx expo start      # Expo Go (SDK 58)
 
 ## Test results
 
-<!-- filled in after the MacBook run; see the PR body for the table -->
+MacBook, macOS 27.2.1, Node v24.22.1, 2026-11-14 ~02:00 +07, commit `46a0ddc`:
+
+| Check | Command | Result |
+| --- | --- | --- |
+| Typecheck | `npm run typecheck` (`tsc --noEmit`) | exit 0 |
+| Lint | `npm run lint` (`eslint .`) | exit 0 |
+| Export web | `npm run export:web` | exit 0 |
+| Export android | `npm run export:android` | exit 0 |
+| Doctor | `npx expo-doctor@latest` | 20/20 checks passed |
+
+First typecheck run failed only on `SkRuntimeEffect | null` from
+`RuntimeEffect.Make` — fixed with the `!` assertion the Skia v2 docs use.
+**Not yet run on a real phone / dev build.**
 
 ## Honest limits
 
