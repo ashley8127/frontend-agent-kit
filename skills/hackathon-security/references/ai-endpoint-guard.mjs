@@ -49,6 +49,17 @@ export const TRIPWIRE_PHRASES = [
 export const OUTPUT_BLOCKLIST = [
   /sk-(proj-)?[A-Za-z0-9]{20,}/, // provider keys (sk-…, sk-proj-…)
   /sk-ant-[A-Za-z0-9_-]{10,}/,
+  // LIVE providers (skill §2: Gemini + Groq; the OpenAI path is banned).
+  // The sk- entries above guard the banned provider's keys; these guard
+  // the keys the product actually uses (cross-check R1, 2026-11-14:
+  // the old list let a leaked Gemini/Groq key pass clean).
+  /AIza[0-9A-Za-z_-]{35}/, // Gemini API key (39 chars: AIza + 35)
+  /gsk_[A-Za-z0-9]{20,}/, // Groq API key
+  /sk-(svcacct|admin)-[A-Za-z0-9]{10,}/, // OpenAI service-account / admin keys (the kit's gate grep already knows this family)
+  // Defence in depth (not live providers on this project):
+  /AKIA[0-9A-Z]{16}/, // AWS access key
+  /ghp_[A-Za-z0-9]{20,}/, // GitHub personal access token
+  /sb_secret_[A-Za-z0-9]{10,}/, // Supabase service-role key
   /Bearer\s+[A-Za-z0-9._-]{10,}/,
   /api[_-]?key\s*[:=]/i,
   /<script/i,
@@ -174,7 +185,10 @@ export function validateOutput(raw, schema, options = {}) {
     } else if (rule.type === "boolean") {
       if (typeof v !== "boolean") return { ok: false, stepFailed: "schema", detail: `"${key}" is not a boolean` };
     } else if (rule.type === "enum") {
-      if (!rule.values.includes(v)) {
+      // A missing `values` array fails closed instead of throwing
+      // TypeError (cross-check R2: an enum rule without values crashed
+      // validateOutput instead of rejecting the output).
+      if (!Array.isArray(rule.values) || !rule.values.includes(v)) {
         return { ok: false, stepFailed: "schema", detail: `"${key}" value not in enum` };
       }
     } else if (rule.type === "array") {
@@ -188,6 +202,10 @@ export function validateOutput(raw, schema, options = {}) {
       if (rule.items === "string" && !v.every((x) => typeof x === "string")) {
         return { ok: false, stepFailed: "schema", detail: `"${key}" has a non-string item` };
       }
+    } else {
+      // Unknown rule type: fail closed. A typo'd rule type must never
+      // silently skip validation of that field (cross-check R2).
+      return { ok: false, stepFailed: "schema", detail: `"${key}" has unknown rule type "${rule.type}"` };
     }
   }
   // C3#4 — blocklist scan over the raw string (covers every field at once).

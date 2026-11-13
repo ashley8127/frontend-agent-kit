@@ -97,6 +97,18 @@ check("output: finish_reason length rejected BEFORE parsing", validateOutput('{"
 check("output: refusal rejected", validateOutput(JSON.stringify({ refused: true }), SCHEMA, { finishReason: "refusal" }).stepFailed, "finish");
 check("output: sk-proj- key in a field rejected", validateOutput(JSON.stringify({ title: "key sk-proj-abcdefghij1234567890 here" }), SCHEMA).stepFailed, "blocklist");
 check("output: plain sk- key in a field rejected", validateOutput(JSON.stringify({ title: "key sk-abcdefghij1234567890 here" }), SCHEMA).stepFailed, "blocklist");
+// Live-provider keys (cross-check R1, 2026-11-14): the old blocklist let
+// these pass clean — the product's actual providers are Gemini + Groq.
+check("output: Gemini AIza key in a field rejected", validateOutput(JSON.stringify({ title: "key AIza" + "A".repeat(35) + " here" }), SCHEMA).stepFailed, "blocklist");
+check("output: Groq gsk_ key in a field rejected", validateOutput(JSON.stringify({ title: "key gsk_" + "a".repeat(48) + " here" }), SCHEMA).stepFailed, "blocklist");
+check("output: sk-svcacct- key in a field rejected", validateOutput(JSON.stringify({ title: "key sk-svcacct-abcdefghij1234567890 here" }), SCHEMA).stepFailed, "blocklist");
+check("output: sk-admin- key in a field rejected", validateOutput(JSON.stringify({ title: "key sk-admin-abcdefghij1234567890 here" }), SCHEMA).stepFailed, "blocklist");
+check("output: AWS AKIA key in a field rejected", validateOutput(JSON.stringify({ title: "key AKIAIOSFODNN7EXAMPLE here" }), SCHEMA).stepFailed, "blocklist");
+check("output: GitHub ghp_ token in a field rejected", validateOutput(JSON.stringify({ title: "token ghp_abcdefghij1234567890 here" }), SCHEMA).stepFailed, "blocklist");
+check("output: Supabase sb_secret_ key in a field rejected", validateOutput(JSON.stringify({ title: "key sb_secret_abcdefghij1234567890 here" }), SCHEMA).stepFailed, "blocklist");
+// Malformed schema fails closed (cross-check R2): no throw, no silent skip.
+check("output: enum rule without values fails closed (no throw)", validateOutput(JSON.stringify({ kind: "plan" }), { kind: { type: "enum" } }).stepFailed, "schema");
+check("output: unknown rule type fails closed", validateOutput(JSON.stringify({ title: "t" }), { title: { type: "object" } }).stepFailed, "schema");
 check("output: javascript: link rejected", validateOutput(JSON.stringify({ title: "[click](javascript:alert(1))" }), SCHEMA).stepFailed, "blocklist");
 check("output: <script in a field rejected", validateOutput(JSON.stringify({ title: "<script>alert(1)</script>" }), SCHEMA).stepFailed, "blocklist");
 check("output: onerror= rejected", validateOutput(JSON.stringify({ title: '<img src=x onerror=alert(1)>' }), SCHEMA).stepFailed, "blocklist");
