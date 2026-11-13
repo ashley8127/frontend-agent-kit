@@ -1,6 +1,19 @@
 __pycache__/
 *.pyc
 .DS_Store
+# Secrets defence-in-depth (D57, 2026-11-14): the kit repo tracks no
+# .env / key files today (verified: `git ls-files` shows none), but
+# nothing stopped one being added by accident — the draft's §(a) rule
+# ("commit .gitignore FIRST, before any .env exists") was never applied
+# to this repo itself. These entries are the product-repo list from
+# hackathon-security §2, minus the Supabase/Convex paths that do not
+# exist here. A tracked file is NOT ignored by this change (gitignore
+# never un-tracks); a future accidental `git add .env` is refused.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
 # Installer output: the upstream Impeccable hook installer writes
 # <repo>/.codex/hooks.json (a project hook) when install.sh runs; it is
 # machine-local installer output, never committed. (install.sh promotes
