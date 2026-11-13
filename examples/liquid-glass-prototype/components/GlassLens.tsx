@@ -58,11 +58,7 @@ half4 main(vec2 xy) {
   c.rgb += vec3(edgeLift) * bend;
   return c;
 }
-`);
-
-if (!LENS_SOURCE) {
-  throw new Error("Couldn't compile the Liquid Glass lens shader");
-}
+`)!;
 
 export interface LensRect {
   x: number;
